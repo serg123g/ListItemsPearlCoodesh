@@ -86,5 +86,9 @@
 - Favorites persisted locally using shared_preferences
 - Optimized list rendering
 
+## Snapshots
+<img width="401" height="705" alt="image" src="https://github.com/user-attachments/assets/cb27b223-1d26-40b0-973d-a075368de446" />
+<img width="402" height="747" alt="image" src="https://github.com/user-attachments/assets/015fa92f-9f00-4680-a3a0-e48bef73c4db" />
+
 ---
 This is a challenge by Coodesh.
