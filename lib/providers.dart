@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'item_model.dart';
+import 'models/item_model.dart';
 import 'mock_api.dart';
 
 final itemsProvider = FutureProvider<List<ListItem>>((ref) async {

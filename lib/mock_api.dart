@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'item_model.dart';
+import 'models/item_model.dart';
 
 class MockApi {
   static Future<List<ListItem>> fetchItems() async {

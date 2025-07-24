@@ -5,6 +5,65 @@ A Flutter app that displays a list of items fetched from a mock API, with favori
 ## Why Riverpod?
 Riverpod was chosen for state management because it is simple, robust, and highly testable. It allows for clear separation of business logic from UI, supports both synchronous and asynchronous state, and makes it easy to manage and share state across the app. Compared to alternatives like Bloc, Riverpod requires less boilerplate and is easier to scale for apps of this size, while still providing excellent performance and flexibility.
 
+## Development Process
+
+### 1. Understanding the Requirements
+- Built a Flutter app to display a list of items from a mock API.
+- Features: favorite toggle, search, badge counter, local persistence, and optimized list rendering.
+
+### 2. Assumptions
+- Mock API is local and does not require authentication.
+- Items are static per launch; only favorite state changes.
+- Tags ("New", "Old", "Hot") are assigned for demonstration.
+- Only favorite state is persisted locally.
+- App targets mobile but is compatible with other Flutter platforms.
+
+### 3. Technical Decisions & Reasoning
+
+#### State Management: Riverpod
+- Chosen for simplicity, robustness, and testability.
+- Less boilerplate than Bloc, easier to scale for this app size.
+- Supports both sync and async state, and clear separation of logic and UI.
+
+#### Project Structure
+- `models/item_model.dart`: Data model.
+- `mock_api.dart`: Simulated API.
+- `providers.dart`: Riverpod providers.
+- `main.dart`: UI and app entry point.
+- Modular structure for maintainability.
+
+#### Mock API
+- Simulates network delay and generates sample data.
+- Allows UI development without a backend.
+
+#### Persistence: shared_preferences
+- Simple key-value storage for favorite IDs.
+- Well-supported and sufficient for this use case.
+
+#### UI Decisions
+- `ListView.builder` for efficient rendering.
+- AppBar badge counter using Stack.
+- Real-time search with Riverpod.
+- Favorite toggle updates state and persists immediately.
+
+#### Optimization
+- Efficient list rendering and minimal UI rebuilds using Riverpod.
+
+### 4. Development Steps
+1. Project setup and dependency installation.
+2. Model and mock API implementation.
+3. State management with Riverpod providers.
+4. Persistence with shared_preferences.
+5. UI implementation: AppBar, badge, search, list, favorite toggle.
+6. Testing and optimization.
+7. Documentation.
+
+### 5. Summary
+- Riverpod chosen for state management.
+- shared_preferences for persistence.
+- Modular, maintainable codebase.
+- All Coodesh challenge requirements met.
+
 ## Technologies Used
 - Dart
 - Flutter
@@ -15,8 +74,8 @@ Riverpod was chosen for state management because it is simple, robust, and highl
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
-   cd list_items_pearl_coodesh
+   git clone https://github.com/serg123g/ListItemsPearlCoodesh
+   cd ListItemsPearlCoodesh
    ```
 2. **Install dependencies:**
    ```sh

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'item_model.dart';
+import 'models/item_model.dart';
 import 'providers.dart';
 
 void main() {
