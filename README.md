@@ -1,10 +1,3 @@
-# List Items Pearl Coodesh
-
-A Flutter app that displays a list of items fetched from a mock API, with favorite toggling, search, and local persistence.
-
-## Why Riverpod?
-Riverpod was chosen for state management because it is simple, robust, and highly testable. It allows for clear separation of business logic from UI, supports both synchronous and asynchronous state, and makes it easy to manage and share state across the app. Compared to alternatives like Bloc, Riverpod requires less boilerplate and is easier to scale for apps of this size, while still providing excellent performance and flexibility.
-
 ## Development Process
 
 ### 1. Understanding the Requirements
